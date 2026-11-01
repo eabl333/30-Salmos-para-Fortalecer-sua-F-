@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Versículos para Fortalecer sua Fé | Voz do Altíssimo</title>
-  <meta name="description" content="Biblioteca digital de versículos bíblicos organizados por temas e sentimentos. Uma palavra de Deus para cada momento da sua vida.">
+  <title>30 Salmos para Fortalecer sua Fé | Voz do Altíssimo</title>
+  <meta name="description" content="30 Salmos selecionados para fortalecer sua fé, com reflexões, favoritos, cartões para redes sociais e acompanhamento da sua jornada de leitura.">
   <meta name="theme-color" content="#C6A15B">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,13 +18,13 @@
     <div class="container header-inner">
       <a class="brand" href="#inicio" aria-label="Voz do Altíssimo - início">
         <span class="brand-mark" aria-hidden="true">✝</span>
-        <span class="brand-text"><strong>Voz do Altíssimo</strong><small>Versículos para Fortalecer sua Fé</small></span>
+        <span class="brand-text"><strong>Voz do Altíssimo</strong><small>30 Salmos para Fortalecer sua Fé</small></span>
       </a>
 
       <nav id="nav" class="nav" aria-label="Navegação principal">
         <a href="#inicio" data-nav="inicio">Início</a>
-        <a href="#biblioteca" data-nav="biblioteca">Biblioteca</a>
-        <a href="#palavra-do-dia" data-nav="palavra-do-dia">Palavra do Dia</a>
+        <a href="#biblioteca" data-nav="biblioteca">Os 30 Salmos</a>
+        <a href="#palavra-do-dia" data-nav="palavra-do-dia">Salmo do Dia</a>
         <a href="#favoritos" data-nav="favoritos">Meus Favoritos <span id="favBadge" class="badge" hidden>0</span></a>
         <a href="#jornada" data-nav="jornada">Minha Jornada</a>
       </nav>
@@ -47,12 +47,12 @@
         <div class="container hero-grid">
           <div class="hero-copy">
             <p class="eyebrow">Voz do Altíssimo</p>
-            <h1>Versículos para Fortalecer sua Fé</h1>
-            <p class="lead">Encontre palavras de esperança, força, amor e sabedoria na Palavra de Deus.</p>
-            <p class="slogan">Uma palavra de Deus para cada momento da sua vida.</p>
+            <h1>30 Salmos para Fortalecer sua Fé</h1>
+            <p class="lead">Trinta salmos escolhidos para trazer paz, força, esperança e confiança ao seu coração.</p>
+            <p class="slogan">Um salmo para cada momento da sua vida.</p>
             <div class="hero-actions">
-              <a class="btn btn-primary" href="#biblioteca">Explorar versículos</a>
-              <a class="btn btn-secondary" href="#palavra-do-dia">Ver palavra do dia</a>
+              <a class="btn btn-primary" href="#biblioteca">Ler os 30 salmos</a>
+              <a class="btn btn-secondary" href="#palavra-do-dia">Ver salmo do dia</a>
             </div>
           </div>
 
@@ -93,12 +93,12 @@
       </div>
 
       <div class="container">
-        <blockquote class="highlight-message">A Palavra de Deus ilumina nossos caminhos e fortalece nossos corações.</blockquote>
+        <blockquote class="highlight-message">Os Salmos são a oração do coração humano e a resposta de Deus ao nosso clamor.</blockquote>
 
         <section class="random-box" aria-labelledby="randomTitle">
-          <h2 id="randomTitle" class="section-title">Um versículo para este momento</h2>
+          <h2 id="randomTitle" class="section-title">Um salmo para este momento</h2>
           <p class="section-sub">Respire fundo e deixe a Palavra encontrar você.</p>
-          <button type="button" id="randomBtn" class="btn btn-primary">Encontrar um versículo para mim</button>
+          <button type="button" id="randomBtn" class="btn btn-primary">Encontrar um salmo para mim</button>
           <div id="randomResult" class="random-result" aria-live="polite"></div>
         </section>
 
@@ -114,14 +114,14 @@
     <section id="view-biblioteca" class="view" hidden>
       <div class="container">
         <header class="page-head">
-          <h2 class="page-title">Biblioteca de Versículos</h2>
-          <p class="section-sub">Pesquise por palavra, livro, referência, tema ou sentimento.</p>
+          <h2 class="page-title">Os 30 Salmos</h2>
+          <p class="section-sub">Pesquise por palavra, número do salmo, tema ou sentimento.</p>
         </header>
 
         <div class="toolbar">
           <label class="search" for="searchInput">
-            <span class="sr-only">Pesquisar versículos</span>
-            <input id="searchInput" type="search" placeholder="Ex.: Esperança, Salmo 23, Medo, Amor, Confiança" autocomplete="off">
+            <span class="sr-only">Pesquisar salmos</span>
+            <input id="searchInput" type="search" placeholder="Ex.: Salmo 23, Paz, Medo, Esperança, Pastor" autocomplete="off">
           </label>
           <label class="select-wrap" for="statusFilter">
             <span class="sr-only">Filtrar por leitura</span>
@@ -133,22 +133,22 @@
           </label>
         </div>
 
-        <div id="chips" class="chips" role="group" aria-label="Filtrar por categoria"></div>
+        <div id="chips" class="chips" role="group" aria-label="Filtrar por tema"></div>
         <p id="resultCount" class="result-count" aria-live="polite"></p>
         <div id="verseList" class="verse-grid"></div>
       </div>
     </section>
 
-    <!-- ===== PALAVRA DO DIA ===== -->
+    <!-- ===== SALMO DO DIA ===== -->
     <section id="view-palavra-do-dia" class="view" hidden>
       <div class="container narrow">
         <header class="page-head center">
-          <p class="eyebrow">Palavra do Dia</p>
+          <p class="eyebrow">Salmo do Dia</p>
           <h2 class="page-title" id="todayDate"></h2>
         </header>
         <div id="todayCard"></div>
         <p id="todayMessage" class="inspire"></p>
-        <p class="small-note center">A Palavra do Dia muda uma vez por dia e permanece a mesma até a meia-noite.</p>
+        <p class="small-note center">O Salmo do Dia muda uma vez por dia e permanece o mesmo até a meia-noite.</p>
       </div>
     </section>
 
@@ -157,7 +157,7 @@
       <div class="container">
         <header class="page-head">
           <h2 class="page-title">Meus Favoritos</h2>
-          <p class="section-sub">Os versículos que você guardou no coração.</p>
+          <p class="section-sub">Os salmos que você guardou no coração.</p>
         </header>
         <div id="favList" class="verse-grid"></div>
       </div>
@@ -167,19 +167,19 @@
     <section id="view-jornada" class="view" hidden>
       <div class="container">
         <header class="page-head">
-          <h2 class="page-title">Minha Jornada com a Palavra</h2>
-          <p class="section-sub">Acompanhe seu progresso de leitura. Marque os versículos como lidos na Biblioteca.</p>
+          <h2 class="page-title">Minha Jornada com os Salmos</h2>
+          <p class="section-sub">Acompanhe seu progresso nos 30 salmos. Marque como lido na página “Os 30 Salmos”.</p>
         </header>
         <div id="journeyStats" class="stats"></div>
         <div class="progress-box">
           <div class="progress-label"><span>Progresso geral de leitura</span><strong id="progressPct">0%</strong></div>
           <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="progressBar"><span id="progressFill"></span></div>
         </div>
-        <h3 class="section-title small">Progresso por categoria</h3>
+        <h3 class="section-title small">Progresso por tema</h3>
         <div id="journeyCats" class="journey-cats"></div>
 
         <div class="storage-note">
-          <strong>Sobre seus dados:</strong> favoritos, versículos lidos, preferências e progresso ficam salvos no navegador e no dispositivo que você está usando. Eles não são sincronizados entre aparelhos e podem ser apagados se você limpar os dados do navegador. O armazenamento local não oferece proteção de acesso.
+          <strong>Sobre seus dados:</strong> favoritos, salmos lidos, preferências e progresso ficam salvos no navegador e no dispositivo que você está usando. Eles não são sincronizados entre aparelhos e podem ser apagados se você limpar os dados do navegador. O armazenamento local não oferece proteção de acesso.
           <div><button type="button" id="resetBtn" class="btn btn-secondary small">Apagar meus dados deste navegador</button></div>
         </div>
       </div>
@@ -200,7 +200,7 @@
         <a href="mailto:SEU-EMAIL@dominio.com">Contato</a>
       </nav>
     </div>
-    <p class="footer-credit">Texto bíblico: Almeida Revista e Corrigida (domínio público). Reflexões originais da Voz do Altíssimo.</p>
+    <p class="footer-credit">Texto bíblico: Almeida Revista e Corrigida (domínio público). Os trechos são seleções dos salmos. Reflexões originais da Voz do Altíssimo.</p>
   </footer>
 
   <!-- Modal: cartão compartilhável -->
